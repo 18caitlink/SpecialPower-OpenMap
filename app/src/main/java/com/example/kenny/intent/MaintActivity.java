@@ -11,20 +11,20 @@ import android.widget.Button;
 
 
 public class MaintActivity extends ActionBarActivity {
-private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maint);
-        button = (Button) findViewById(R.id.button);
+        Button bob = (Button) findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        bob.setOnClickListener(new View.OnClickListener() {
+            
            public void onClick(View v) {
                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
                startActivity(i);
-
-
            }
+           
         });
 
     }
